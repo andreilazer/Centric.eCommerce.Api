@@ -2,9 +2,9 @@
 
 namespace Centric.eCommerce.Product.Api.DB
 {
-    public class ProductDbContext: DbContext
+    public class ProductsDbContext: DbContext
     {
-        public ProductDbContext(DbContextOptions options) : base(options)
+        public ProductsDbContext(DbContextOptions options) : base(options)
         {
 
         }
