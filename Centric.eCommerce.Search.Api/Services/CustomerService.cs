@@ -27,7 +27,7 @@ namespace Centric.eCommerce.Search.Api.Services
                     {
                         PropertyNameCaseInsensitive = true
                     };
-                    var result = JsonSerializer.Deserialize<IEnumerable<dynamic>>(content, options);
+                    var result = JsonSerializer.Deserialize<dynamic>(content, options);
                     return (true, result, null);
                 }
                 return (false, null, response.ReasonPhrase);

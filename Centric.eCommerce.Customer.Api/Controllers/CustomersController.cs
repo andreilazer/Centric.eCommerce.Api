@@ -21,10 +21,10 @@ public class CustomersController : ControllerBase
         return customers.IsSuccess ? Ok(customers.Customers) : NotFound(customers.ErrorMessage);
     }
 
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetProductAsync(Guid id)
+    [HttpGet("{customerId}")]
+    public async Task<IActionResult> GetProductAsync(Guid customerId)
     {
-        var customer = await provider.GetCustomerAsync(id);
+        var customer = await provider.GetCustomerAsync(customerId);
         return customer.IsSuccess ? Ok(customer.Customer) : NotFound(customer.ErrorMessage);
     } 
 }

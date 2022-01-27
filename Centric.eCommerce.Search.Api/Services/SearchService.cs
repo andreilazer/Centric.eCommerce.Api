@@ -26,7 +26,7 @@ namespace Centric.eCommerce.Search.Api.Services
                 {
                     foreach (var item in order.Items)
                     {
-                        item.ProductName = productsResult.Products.FirstOrDefault(p => p.Id == item.ProductId)?.Name;
+                        item.ProductName = productsResult.Products?.FirstOrDefault(p => p.Id == item.ProductId)?.Name ?? "Product name is not available";
                     }
                 }
                 var result = new
