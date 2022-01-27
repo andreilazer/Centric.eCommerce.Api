@@ -1,5 +1,4 @@
-﻿using Centric.eCommerce.Order.API.DB;
-using Centric.eCommerce.Order.API.Models;
+﻿using Centric.eCommerce.Order.API.Models;
 
 namespace Centric.eCommerce.Order.API.Profiles
 {
