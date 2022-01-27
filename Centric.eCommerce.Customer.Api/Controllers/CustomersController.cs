@@ -24,7 +24,7 @@ public class CustomersController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetProductAsync(Guid id)
     {
-        var customer = await provider.GetProductAsync(id);
+        var customer = await provider.GetCustomerAsync(id);
         return customer.IsSuccess ? Ok(customer.Customer) : NotFound(customer.ErrorMessage);
     } 
 }
