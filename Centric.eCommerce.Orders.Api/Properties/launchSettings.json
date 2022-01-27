@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:20114",
+      "applicationUrl": "http://localhost:40793",
       "sslPort": 0
     }
   },
   "profiles": {
-    "Centric.eCommerce.Orders.Api": {
+    "FII.eCommerce.Orders.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5088",
+      "applicationUrl": "http://localhost:5184",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
